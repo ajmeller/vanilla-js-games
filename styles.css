@@ -1,0 +1,241 @@
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: #f5e4c5;
+  color: #474e65;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+  margin: 0px;
+  font-size: 16px;
+}
+
+section {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #e9d9c0;
+  width: 36%;
+  position: relative;
+}
+
+section.vending {
+  height: 50%;
+}
+
+section.light {
+  height: 25%;
+  padding: 40px 40px 0px 40px;
+}
+
+section.make-money {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px 0px;
+  width: auto;
+}
+
+button {
+  background-color: #eb6443;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #eb6543ef;
+}
+
+.vending .total {
+  background-color: #719ffc;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.fa-times-circle {
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4%;
+}
+
+.vending .vending-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60%;
+  width: 80%;
+}
+
+.vending button {
+  width: 45%;
+  height: 40%;
+  font-size: 14px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.light .light-bulb {
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.light .light-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
+}
+
+.light button {
+  margin: 0px 5px;
+  padding: 20px;
+  width: 40%;
+}
+
+button:disabled {
+  background-color: #f27a5d;
+}
+
+#make-money {
+  height: 170px;
+  margin: 10px;
+}
+
+.make-money .inputs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 25px 0px 15px 0px;
+}
+
+.make-money .number-input,
+.coin-input {
+  width: 45%;
+}
+
+.make-money label {
+  color: #9b9ca1;
+}
+
+.make-money input,
+select {
+  border: none;
+  border-bottom: 1px solid #c9cbd2;
+  margin: 10px 0px;
+  padding: 5px 0px;
+  width: 100%;
+  color: #474e65;
+  font-size: 16px;
+}
+
+.make-money button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  padding: 20px;
+}
+
+.coin-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50%;
+}
+
+.coin {
+  height: 45px;
+  width: 45px;
+  background-color: #bfc0c7;
+  border: 2px solid #9b9ca1;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+}
+
+.coin-letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.penny {
+  background-color: #ab4915;
+  color: #702b06;
+  border: 2px solid #702b06;
+}
+
+.nickel {
+  height: 60px;
+  width: 60px;
+}
+
+.quarter {
+  height: 75px;
+  width: 75px;
+}
+
+@media only screen and (max-width: 687px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  body {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section {
+    margin: 20px;
+    width: 60%;
+  }
+
+  section.vending {
+    height: 340px;
+  }
+
+  section.light {
+    height: 180px;
+  }
+
+  section.make-money {
+    height: 600px;
+  }
+
+  .light .light-buttons {
+    flex-direction: row wrap;
+  }
+}

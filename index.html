@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/325a882eaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="vending">
+      <div class="heading">Total Up</div>
+      <div class="total">
+        Total: <span id="vending-total">$0.00</span>
+        <i class="far fa-times-circle" id="clear-total"></i>
+      </div>
+      <div class="vending-buttons">
+        <button class="vending-button" class="cola">
+          Lime Cola<br />$2.00
+        </button>
+        <button class="vending-button" class="peanuts">
+          Salted Peanuts<br />$3.00
+        </button>
+        <button class="vending-button" class="chocolate">
+          Chocolate Bar<br />$4.00
+        </button>
+        <button class="vending-button" class="gummies">
+          Fruit Gummies<br />$6.00
+        </button>
+      </div>
+    </section>
+    <section class="light">
+      <div class="light-bulb" id="light-bulb" light="na">
+        <div class="heading" id="light-bulb-name">Light Bulb</div>
+      </div>
+      <div class="light-buttons">
+        <button id="on">On</button>
+        <button id="off">Off</button>
+        <button id="toggle">Toggle</button>
+        <button id="end">End</button>
+      </div>
+    </section>
+    <section class="make-money">
+      <div class="heading">Make Money</div>
+      <form action="*" class="money" id="make-money">
+        <div class="inputs">
+          <div class="number-input">
+            <label for="number">How many?</label>
+            <input
+              type="number"
+              name="coinNum"
+              placeholder="0"
+              class="number"
+              id="number"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="coin-input">
+            <label for="coin">Which coin?</label>
+            <select name="coinType" id="coin" class="coin-select">
+              <option value="Penny">Penny</option>
+              <option value="Nickel">Nickel</option>
+              <option value="Dime">Dime</option>
+              <option value="Quarter">Quarter</option>
+            </select>
+          </div>
+        </div>
+        <button class="make-money" id="submit">Make Money!</button>
+      </form>
+      <div id="coin-area"></div>
+    </section>
+    <script src="scripts/vending.js"></script>
+    <script src="scripts/light-bulb.js"></script>
+    <script src="scripts/make-money.js"></script>
+  </body>
+</html>

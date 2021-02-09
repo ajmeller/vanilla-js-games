@@ -7,13 +7,33 @@ body {
   background-color: #f5e4c5;
   color: #474e65;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.games-header {
+  height: 40px;
+}
+
+.github {
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  color: #474e65;
+}
+
+.github a:visited {
+  color: 474e65;
+}
+
+.games-container {
+  height: 95%;
+  margin-left: 20px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
   align-content: space-evenly;
-  margin: 0px;
-  font-size: 16px;
 }
 
 section {
@@ -40,6 +60,7 @@ section.make-money {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: scroll;
 }
 
 .heading {
@@ -123,9 +144,8 @@ button:disabled {
   background-color: #f27a5d;
 }
 
-#make-money {
-  height: 170px;
-  margin: 10px;
+.money-form {
+  margin: 10px 10px 70px 10px;
 }
 
 .make-money .inputs {
@@ -170,6 +190,7 @@ select {
   left: 50%;
   transform: translateX(-50%);
   height: 50%;
+  flex-grow: 2;
 }
 
 .coin {
@@ -181,6 +202,7 @@ select {
   display: inline-block;
   margin: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .coin-letter {
